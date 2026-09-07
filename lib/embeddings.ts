@@ -7,7 +7,13 @@ export async function generateEmbedding(text: string): Promise<number[]> {
     input: text,
   });
 
-  return response.data[0].embedding;
+  const embedding = response.data[0].embedding;
+
+  if (typeof embedding === "string") {
+    throw new Error("Unexpected string embedding returned from API");
+  }
+
+  return embedding;
 }
 
 export function cosineSimilarity(a: number[], b: number[]): number {
