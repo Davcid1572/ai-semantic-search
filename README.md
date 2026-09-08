@@ -6,7 +6,7 @@ works under the hood using text embeddings and vector similarity.
 
 ## Live Demo
 
-[your-vercel-url.vercel.app](https://your-vercel-url.vercel.app)
+[My App](https://ai-semantic-search-eta.vercel.app/)
 
 ## How It Works
 
@@ -49,7 +49,7 @@ Result is always between 0 (unrelated) and 1 (identical meaning).
 ## Running Locally
 
 1. Clone the repo
-   git clone https://github.com/YOURUSERNAME/ai-semantic-search.git
+   git clone https://github.com/Davcid1572/ai-semantic-search
 
 2. Install dependencies
    npm install
